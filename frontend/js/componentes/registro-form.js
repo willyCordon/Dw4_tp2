@@ -49,10 +49,30 @@ Vue.component('registro-form',{
                 <div class='group-form col-xs-12 col-md-6'>
                     <label for='equipo'>equipo</label>
                     <select id='equipo' class='form-control' v-model='usuario.equipo'>
-                        <option value='1'>Gryffindor</option>
-                        <option value='2'>Hufflepuff</option>
-                        <option value='3'>Ravenclaw</option>
-                        <option value='4'>Slytherin</option>
+                        <option value='1'>Aldosivi</option>
+                        <option value='2'>Argentinos</option>
+                        <option value='3'>Arsenal</option>
+                        <option value='4'>Atlético Tucumán</option>
+                        <option value='5'>Banfield</option>
+                        <option value='6'>Boca Juniors</option>
+                        <option value='7'>Central Córdoba</option>
+                        <option value='8'>Colón</option>
+                        <option value='9'>Defensa y Justicia</option>
+                        <option value='10'>Estudiantes</option>
+                        <option value='11'>Gimnasia y Esgrima</option>
+                        <option value='12'>Godoy Cruz</option>
+                        <option value='13'>Huracán</option>
+                        <option value='14'>Independiente</option>
+                        <option value='15'>Lanús</option>
+                        <option value='16'>Newells Old Boys</option>
+                        <option value='17'>Patronato</option>
+                        <option value='18'>Racing</option>
+                        <option value='19'>Riber</option>
+                        <option value='20'>Rosario Central</option>
+                        <option value='21'>San Lorenzo</option>
+                        <option value='22'>Talleres</option>
+                        <option value='23'>Unión de Santa Fe</option>
+                        <option value='24'>Vélez Sarsfield</option>
                     </select>
                     <ul class='list-error' v-if='aviso.error.equipo != null' >
                         <li v-for='msj in aviso.error.equipo'>{{msj}}</li>
