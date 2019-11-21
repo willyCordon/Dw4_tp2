@@ -49,8 +49,8 @@
    
 <footer id='bottom'>
     <h1>Sobre Futbol</h1>
-    <p>Diseño y Programación: Willy Cordon & Alejadro Didonato</p>
-    <p>Clientes web mobile & Programacino III</p>
+    <p>Diseño y Programación: Willy Cordon & Alejadro Di Donato</p>
+    <p>Clientes web mobile & Programación III</p>
 </footer>
     
     </div>

@@ -87,7 +87,7 @@ INSERT INTO usuarios(nombre, apellido, email, clave, fecha_alta, avatar, equipo,
 VALUES
 ('Willy', 'Cordon', 'cordonwilly24@gmail.com', '$2y$10$2cxR4r.B86y7nnfhaRGKKuiIsnsNKLs/yUQ6RQS8/pEfMTh2WLhM2', now(), 'willy.jpg', 6, '1992-12-22'),
 ('Alejandro', 'Di Donato', 'alejandro.didonato@davinci.edu.ar', '$2y$10$2cxR4r.B86y7nnfhaRGKKuiIsnsNKLs/yUQ6RQS8/pEfMTh2WLhM2', now(), 'ale.jpg', 19, '1992-07-25'),
-('Pablo', 'Rodriguez', 'pab.rodri@gmail.com', '$2y$10$2cxR4r.B86y7nnfhaRGKKuiIsnsNKLs/yUQ6RQS8/pEfMTh2WLhM2', now(), 'perfil_beto.jpg', 13, '1978-02-21'),
+('Pablo', 'Rodriguez', 'pab.rodri@gmail.com', '$2y$10$2cxR4r.B86y7nnfhaRGKKuiIsnsNKLs/yUQ6RQS8/pEfMTh2WLhM2', now(), 'perfil.jpg', 8, '1978-02-21'),
 ('Roberto', 'Gutierrez', 'beto.g@gmail.com', '$2y$10$2cxR4r.B86y7nnfhaRGKKuiIsnsNKLs/yUQ6RQS8/pEfMTh2WLhM2', now(), 'perfil1.jpg', 19, '1986-05-26'),
 ('Mariana', 'Pérez', 'perezmarian@gmail.com', '$2y$10$2cxR4r.B86y7nnfhaRGKKuiIsnsNKLs/yUQ6RQS8/pEfMTh2WLhM2', now(), 'perfil.jpg', 6, '1996-11-13');
 
@@ -96,9 +96,9 @@ VALUES
 ('Qué pasó el 9-12-18?', 'Todos', '2019-12-01', '12:21:30', 1, null),
 ('Te fuiste a la B', 'Todos', '2019-12-01', '13:10:31', 1, null),
 ('Aeea, yo soy Sabalero, aeea, Sabalero, Sabalero!', 'Todos', '2019-12-01', '14:22:32', 3, null),
-('Vamos Boquita.', 'Todos', '2019-12-01', '11:50:10', 1, null),
-('Alguien tiene entradas para la final de la Libertadores?', 'Todos', '2019-12-01', '15:40:50', 2, null),
-('Gracias Gallardo.', 'Todos', '2019-12-01', '23:24:30', 4, null),
+('Vamos Boquita.', 'Todos', '2019-12-01', '15:50:10', 1, null),
+('Alguien tiene entradas para la final de la Libertadores?', 'Todos', '2019-12-01', '15:55:50', 2, null),
+('Gracias Gallardo.', 'Todos', '2019-12-01', '21:24:30', 4, null),
 ('El mejor de todos los tiempos.', 'Todos', '2019-12-01', '23:25:30', 5, 'riquelme.jpg');
 
 INSERT INTO comentarios(texto, publicacion, usuario, dia, hora)

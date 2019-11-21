@@ -1,21 +1,15 @@
-/*
-CSS
-*/
+/* FUENTES */
+
+@import url('https://fonts.googleapis.com/css?family=Anton|Lato:400,900&display=swap');
 
 
 
-/*=======================================================
-                        GENERALES
-=======================================================*/
+/* MAIN STYLES */
 
-.mt-50{margin-top:50px;}
 *:not(i){
-    font-family: 'Average', serif;
+    font-family: 'Anton', sans-serif;
 }
 
-main > .container{
-    margin-top:20px;
-}
 
 .links{
     color:rgba(4, 53, 56, 0.89) !important;
@@ -100,7 +94,6 @@ main > .container{
     background: url(../img/escudos/logo.png) no-repeat center top;
     background-size: 100px 100px;
     padding: 110px 0 20px 0;
-    border-bottom:1px solid #CEA64E;
     text-align:center;
 }
 
@@ -115,7 +108,7 @@ main > .container{
 =======================================================*/
 
 body{
-    background: url(../img/fondos/fondo1.jpg) repeat left top;
+    background: url(../img/fondos/fondo1.jpg) repeat left top fixed;
 }
 
 .container{
