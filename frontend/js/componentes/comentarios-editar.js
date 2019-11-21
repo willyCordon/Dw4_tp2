@@ -56,7 +56,7 @@ Vue.component('comentarios-editar',{
                     case 16: this.equipo = 'Newells Old Boys'     ;return 'nob';break; 
                     case 17: this.equipo = 'Patronato'            ;return 'patr';break; 
                     case 18: this.equipo = 'Racing'               ;return 'rac';break; 
-                    case 19: this.equipo = 'River Plate (ARG)'    ;return 'rv';break; 
+                    case 19: this.equipo = 'River Plate'    ;return 'rv';break; 
                     case 20: this.equipo = 'Rosario Central'      ;return 'ros';break; 
                     case 21: this.equipo = 'San Lorenzo'          ;return 'sl';break; 
                     case 22: this.equipo = 'Talleres'             ;return 'tall';break; 

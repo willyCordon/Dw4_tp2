@@ -109,7 +109,7 @@ Vue.component('perfil-page',{
                 case 16: this.equipo.clase = ' nob'  , this.equipo.nombre =    'Newells Old Boys'   ; break; 
                 case 17: this.equipo.clase = ' patr' , this.equipo.nombre =    'Patronato'          ; break; 
                 case 18: this.equipo.clase = ' rac'  , this.equipo.nombre =    'Racing'             ; break; 
-                case 19: this.equipo.clase = ' rv'   , this.equipo.nombre =    'River Plate (ARG)'  ; break; 
+                case 19: this.equipo.clase = ' rv'   , this.equipo.nombre =    'River Plate'  ; break; 
                 case 20: this.equipo.clase = ' ros'  , this.equipo.nombre =    'Rosario Central'    ; break; 
                 case 21: this.equipo.clase = ' sl'   , this.equipo.nombre =    'San Lorenzo'        ; break; 
                 case 22: this.equipo.clase = ' tall' , this.equipo.nombre =    'Talleres'           ; break; 

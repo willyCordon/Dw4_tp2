@@ -13,7 +13,7 @@ Vue.component('publicacion-page-comentarios',{
                             </div>
                             <div class='col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-2 cont-img'>
                                 <img :alt="'Avatar de ' + usuario.apellido + ' ' + usuario.nombre" :src="'img/avatares/' + usuario.avatar" class='img-circle img-responsive' />
-                                <img alt='escudo' :src="'img/escudos/'+ estilo + '.png'" class='escudito' />
+                                <img alt='escudo' :src="'img/escudos/'+ estilo + '.png'" class='escudo' />
                             </div>
                             <div class='col-xs-12 col-sm-10'>
                                 <router-link :to='urlPerfilUsuario'>
@@ -58,7 +58,7 @@ Vue.component('publicacion-page-comentarios',{
                 case 16: this.equipo = 'Newells Old Boys'     ;return 'nob';break; 
                 case 17: this.equipo = 'Patronato'            ;return 'patr';break; 
                 case 18: this.equipo = 'Racing'               ;return 'rac';break; 
-                case 19: this.equipo = 'River Plate (ARG)'    ;return 'rv';break; 
+                case 19: this.equipo = 'River Plate'          ;return 'rv';break; 
                 case 20: this.equipo = 'Rosario Central'      ;return 'ros';break; 
                 case 21: this.equipo = 'San Lorenzo'          ;return 'sl';break; 
                 case 22: this.equipo = 'Talleres'             ;return 'tall';break; 
@@ -109,7 +109,7 @@ Vue.component('publicacion-page-comentarios',{
 * eliminar el comentario 
 */        
         borrarComentario(){
-            let rta = confirm( '¿Está seguro que desea borrar este comentario?');
+            let rta = confirm( '¿Estás seguro que querés eliminar este comentario?');
             
             if(rta){
                 fetch('../backend/public/api/comentarios/' + this.comentario.id, {

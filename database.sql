@@ -57,7 +57,7 @@ VALUES
 ('Aldosivi',           'ÁNGEL GUILLERMO HOYOS'  ,'tiburon'         ,08,    'aldosivi.png'),
 ('Argentinos',         'DIEGO DABOVE'           ,'bicho'           ,25,    'argentinos.png'),
 ('Arsenal',            'SERGIO RONDINA'         ,'del viaducto'    ,17,    'arsenal.png'),
-('Atlético Tucumán',   'RICARDO ZIELINSKI'      ,'decano'          ,22,    'tucuman.jpg'),
+('Atlético Tucumán',   'RICARDO ZIELINSKI'      ,'decano'          ,22,    'tucuman.png'),
 ('Banfield',           'JULIO FALCIONI'         ,'taladro'         ,13,    'banfield.png'),
 ('Boca Juniors',       'GUSTAVO ALFARO'         ,'xeneize'         ,25,    'boca.png'),
 ('Central Córdoba',    'GUSTAVO COLEONI'        ,'ferroviario'     ,16,    'centralC.png'),

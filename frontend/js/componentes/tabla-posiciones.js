@@ -1,6 +1,6 @@
 Vue.component('tabla-posiciones',{
-    template: `<div>
-    <div class='puntos'>
+    template: `<div class="container">
+    <div class='col-md-12 puntos'>
     <tabla-posiciones-fila
         v-for='equipo in equipos'
         :equipo='equipo'

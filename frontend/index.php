@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Average&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" href="../frontend/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../frontend/favicon.ico" type="image/x-icon">
     <script src="js/main.js"></script>
 </head>
 <body>
@@ -49,7 +51,7 @@
    
 <footer id='bottom'>
     <h1>Sobre Futbol</h1>
-    <p>Diseño y Programación: Willy Cordon & Alejadro Di Donato</p>
+    <p>Diseño y Programación: Willy Cordon & Alejandro Di Donato</p>
     <p>Clientes web mobile & Programación III</p>
 </footer>
     
@@ -67,8 +69,8 @@
         
     <script src='js/componentes/muro-page.js'></script>
     <script src='js/componentes/muro-page-listado.js'></script>
-    <script src='js/componentes/muro-page-equipos.js'></script>
-    <script src='js/componentes/muro-page-equipos-fila.js'></script>
+    <!-- <script src='js/componentes/muro-page-equipos.js'></script>
+    <script src='js/componentes/muro-page-equipos-fila.js'></script> -->
 
     <script src='js/componentes/perfil-page.js'></script>
     <script src='js/componentes/perfil-editar.js'></script>
