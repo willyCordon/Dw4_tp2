@@ -99,7 +99,7 @@ VALUES
 ('Vamos Boquita.', 'Todos', '2019-12-01', '11:50:10', 1, null),
 ('Alguien tiene entradas para la final de la Libertadores?', 'Todos', '2019-12-01', '15:40:50', 2, null),
 ('Gracias Gallardo.', 'Todos', '2019-12-01', '23:24:30', 4, null),
-('El mejor de todos los tiempos.', 'Todos', '2019-12-01', '23:25:30', 5, 'riquelme.jpg'),;
+('El mejor de todos los tiempos.', 'Todos', '2019-12-01', '23:25:30', 5, 'riquelme.jpg');
 
 INSERT INTO comentarios(texto, publicacion, usuario, dia, hora)
 VALUES
