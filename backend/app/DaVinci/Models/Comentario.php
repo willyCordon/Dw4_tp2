@@ -44,15 +44,11 @@ class Comentario extends Modelo
     }    
     
     
-/*=================================================
-                GETTERS Y SETTERS
-==================================================*/      
-    
- /**
-* Setea el $id
-*
-* @param int $id
-*/    
+/**
+ * 
+ * ************* GETTER Y SETTER *******************
+ * 
+ */
 
     public function setId($id){
         if(!is_numeric($id)){
@@ -61,22 +57,11 @@ class Comentario extends Modelo
              $this->id = $id;
     }
     
- /**
- * Retorna el $id
- * 
-* @return int $id
- */
- 
+
      public function getId(){
          return $this->id;
      }  
     
-  /*--------------------------------------------------------------*/        
- /**
-* Setea el $dia
-*
-* @param string $dia
-*/    
 
     public function setDia($dia){
         if(!is_string($dia)){
@@ -85,22 +70,13 @@ class Comentario extends Modelo
              $this->dia = $dia;
     }    
     
- /**
- * Retorna el $dia
- * 
-* @return string $dia
- */
+
  
      public function getDia(){
          return $this->dia;
      }
     
- /*--------------------------------------------------------------*/        
- /**
-* Setea el $hora
-*
-* @param string $hora
-*/    
+ 
 
     public function setHora($hora){
         if(!is_string($hora)){
@@ -109,65 +85,34 @@ class Comentario extends Modelo
              $this->hora = $hora;
     }    
     
- /**
- * Retorna el $hora
- * 
-* @return string $hora
- */
- 
+
      public function getHora(){
          return $this->hora;
      }     
     
-    
-   /*--------------------------------------------------------------*/        
- /**
-* Setea el $publicacion
-*
-* @param string $publicacion
-*/    
+  
 
     public function setPublicacion($publicacion){
              $this->publicacion = $publicacion;
     }    
     
- /**
- * Retorna el $publicacion
- * 
-* @return string $publicacion
- */
+
  
      public function getPublicacion(){
         return $this->publicacion;       
      } 
     
-  /*--------------------------------------------------------------*/        
- /**
-* Setea el $usuario
-*
-* @param string $usuario
-*/    
 
     public function setUsuario($usuario){
              $this->usuario = $usuario;
     }    
-    
- /**
- * Retorna el $usuario
- * 
-* @return string $usuario
- */
+
  
      public function getUsuario(){
         return $this->usuario;     
      }     
 
-/*--------------------------------------------------------------*/        
- /**
-* Setea el $texto
-*
-* @param string $texto
-*/    
+   
 
     public function setTexto($texto){
         if(!is_string($texto)){
@@ -176,11 +121,7 @@ class Comentario extends Modelo
              $this->texto = $texto;
     }    
     
- /**
- * Retorna el $texto
- * 
-* @return string $texto
- */
+
  
      public function getTexto(){
          return $this->texto;

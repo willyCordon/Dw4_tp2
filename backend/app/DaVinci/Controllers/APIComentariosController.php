@@ -8,18 +8,14 @@ use DaVinci\Core\App;
 use DaVinci\Core\Route;
 use DaVinci\Validation\Validator;
 
-/**
-* Clase encargada
-* de las peticiones de comentarios
-*/
 
 class APIComentariosController
 {
 
 /**
 *
-* Busca todos los comentarios relacionados
-* a una publicación por su id
+* listado de comentarios relacionados
+*
 *
 */    
     public function listadoPorPub()
@@ -34,15 +30,15 @@ class APIComentariosController
     }
     
 /**
-* Guarda un comentario nuevo
+* guardar un comentario nuevo
 */    
     public function grabar()
     {
-        // DATOS RECIBIDOS
+      
             $buffer = file_get_contents('php://input');
             $data = json_decode($buffer, true);
         
-        // VALIDO
+        
             $valid = new Validator($data, [
                 'texto' => ['required', 'min:3']
             ]);
@@ -55,11 +51,11 @@ class APIComentariosController
                exit;           
             }
         
-        // CREO EL COMENTARIO
+        
             $comen = new Comentario;
             $nuevo = $comen->create($data);
         
-        // RESPUESTA
+       
             if($nuevo){
                 $rta = [
                         'status' => 0,
@@ -78,7 +74,7 @@ class APIComentariosController
     }
 
 /**
-* Elimino un comentario buscándolo por su id
+* eliminar comentario por id
 */      
     public function borrar(){
         $parameters = Route::getUrlParameters();
@@ -103,7 +99,7 @@ class APIComentariosController
     }
 
 /**
-* Devulve un comentario buscado por su id
+* Trae por id
 */      
     public function traerPorId()
     {
@@ -117,15 +113,15 @@ class APIComentariosController
     }
  
 /**
-* Edita la información de un comentario
+* Edita 
 */      
     public function editar()
     {
-        // DATOS RECIBIDOS
+        
         $buffer = file_get_contents('php://input');
         $data = json_decode($buffer, true);
        
-        // VALIDO
+     
             $valid = new Validator($data, [
                 'texto' => ['required', 'min:3'],
            ]);
@@ -138,7 +134,7 @@ class APIComentariosController
                exit;
            }
         
-        //EDITO NOMAS
+      
             $com = new Comentario();
             $edit = $com->edit($data);
 

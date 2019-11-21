@@ -9,9 +9,7 @@ class Equipo extends Modelo
 {
     protected $table = "equipos";
     protected $primaryKey = "id";
-        /** @var array Lista de atributos */
     protected $attributes = ['id_equipo', 'nombre', 'puntos', 'apodo', 'entrenador', 'imagen'];
-    
     protected $id_equipo;
     protected $nombre;
     protected $puntos;
@@ -21,8 +19,7 @@ class Equipo extends Modelo
     
 /**
 * Retorna un array con todas las equipos
-* en orden por puntaje
-* @return array
+*
 */        
     public function getLimitOrder(){
         $db = Connection::getConnection();
@@ -58,15 +55,10 @@ class Equipo extends Modelo
         
         return $salida;
     }
-
 /**
-* Suma los puntos obtenidos
-* en el puntaje de una equipo
-*
-* @param int $num
-* @param int $equipo
-* @return bool
-*/    
+ * Sumar puntos
+ */
+
     public function sumarPuntos($num, $equipo){
         $db = Connection::getConnection();
         $query = "UPDATE " . $this->table . " SET puntos = puntos + :num  WHERE id_equipo = :equipo ";
@@ -79,15 +71,12 @@ class Equipo extends Modelo
     }
       
     
-/*=================================================
-                GETTERS Y SETTERS
-==================================================*/      
-    
- /**
-* Setea el $id
-*
-* @param int $id
-*/    
+/**
+ * 
+ * ************* GETTER Y SETTER *******************
+ * 
+ */
+  
 
     public function setId($id){
         if(!is_numeric($id)){
@@ -96,22 +85,13 @@ class Equipo extends Modelo
              $this->id_equipo = $id;
     }
     
- /**
- * Retorna el $id
- * 
-* @return int $id
- */
+
  
      public function getId(){
          return $this->id_equipo;
      }  
     
-  /*--------------------------------------------------------------*/        
- /**
-* Setea el $nombre
-*
-* @param string $nombre
-*/    
+  
 
     public function setNombre($nombre){
         if(!is_string($nombre)){
@@ -120,23 +100,12 @@ class Equipo extends Modelo
              $this->nombre = $nombre;
     }    
     
- /**
- * Retorna el $nombre
- * 
-* @return string $nombre
- */
+
  
      public function getNombre(){
          return $this->nombre;
      }
-    
- /*--------------------------------------------------------------*/        
-  
-  /**
-* Setea el $puntos
-*
-* @param int $puntos
-*/    
+
 
     public function setPuntos($puntos){
         if(!is_numeric($puntos)){
@@ -145,22 +114,12 @@ class Equipo extends Modelo
              $this->puntos = $puntos;
     }
     
- /**
- * Retorna el $puntos
- * 
-* @return int $puntos
- */
- 
+
      public function getPuntos(){
          return $this->puntos;
      }    
     
- /*--------------------------------------------------------------*/        
- /**
-* Setea el $apodo
-*
-* @param string $apodo
-*/    
+  
 
     public function setApodo($apodo){
         if(!is_string($apodo)){
@@ -169,23 +128,13 @@ class Equipo extends Modelo
              $this->apodo = $apodo;
     }    
     
- /**
- * Retorna el $apodo
- * 
-* @return string $apodo
- */
+
  
      public function getApodo(){
          return $this->apodo;
      }
     
- /*--------------------------------------------------------------*/
-       
- /**
-* Setea el $entrenador
-*
-* @param string $entrenador
-*/    
+
 
     public function setEntrenador($entrenador){
         if(!is_string($entrenador)){
@@ -194,23 +143,13 @@ class Equipo extends Modelo
              $this->entrenador = $entrenador;
     }    
     
- /**
- * Retorna el $entrenador
- * 
-* @return string $entrenador
- */
+
  
      public function getEntrenador(){
          return $this->entrenador;
      }
     
- /*--------------------------------------------------------------*/    
-    
- /**
-* Setea el $imagen
-*
-* @param string $imagen
-*/    
+  
 
     public function setImagen($imagen){
         if(!is_string($imagen)){
@@ -219,11 +158,7 @@ class Equipo extends Modelo
              $this->imagen = $imagen;
     }    
     
- /**
- * Retorna el $imagen
- * 
-* @return string $imagen
- */
+
  
      public function getImagen(){
          return $this->imagen;

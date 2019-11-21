@@ -7,16 +7,12 @@ use DaVinci\Models\Equipo;
 use DaVinci\Core\App;
 use DaVinci\Core\Route;
 
-/**
-* Controlador encargado de
-* las peticiones de las equipo
-*/  
+
 class APIEquiposController
 {
 
 /**
-* Devuelve el listado
-* completo de todas las equipo
+*retorna el listado de los equipos
 */  
     public function listado()
     {
@@ -27,9 +23,8 @@ class APIEquiposController
     }
 
 
-    /**
+/**
 * Devuelve el listado limitado a 3 registros
-* completo de todas las equipo
 */  
 public function listadoLimit()
 {

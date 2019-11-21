@@ -60,26 +60,26 @@ class Validator
     
     public function aplicarRegla($campo, $regla)
     {
-        // VERIFICO EL TIPO DE REGLA
+        
             if(strpos($regla, ':')){
                 list($nombre, $dato) = explode(':', $regla);
 
-                // NOMBRE DEL METODO
+                
                     $metodo = "_" . $nombre;
                     if(!method_exists($this, $metodo)) {
                         throw new Exception("No existe la regla de validación" . $nombre);
                     }
 
-                // EJECUTO LA REGLA
+               
                     $this->{$metodo}($campo, $dato);
             }else{
-                // METODO
+                
                     $metodo = "_" . $regla;
-                // VERIFICO SI EXISTE
+               
                     if(!method_exists($this, $metodo)) {
                         throw new Exception("No existe la regla de validación" . $nombre);
                     } 
-                // EJECUTO LA REGLA
+                
                     $this->{$metodo}($campo);
             }
     }
@@ -124,10 +124,12 @@ public function addError($campo, $error)
     
     
     
- /*=================================================
-                VALIDACIONES
-==================================================*/      
-    
+/**
+ * 
+ * ************* Validacion *******************
+ * 
+ */
+
 /**
 * Verifica que el valor del campo no esté vacío.
 *
@@ -201,5 +203,5 @@ protected function _numeric($campo)
 }    
     
 
-} //FINAL DE LA CLASE
+} 
 

@@ -1,6 +1,8 @@
 <?php
 namespace DaVinci\Auth;
 
+
+// Agregamos la clase que nos sugiere el paquete de lcobucci.
 use Lcobucci\JWT\Builder;
 use Lcobucci\JWT\Parser;
 use Lcobucci\JWT\ValidationData;
@@ -15,14 +17,12 @@ use DaVinci\Auth\Contracts\Autenticable;
 class Auth
 {
 
+
+    
 protected $user;    
 
     
-/**
-* Instancia la clase para el usuario.
-*
-* @param Autenticable $user
-*/
+
     
     public function __construct(Autenticable $user)
     {
@@ -31,12 +31,12 @@ protected $user;
     
     
 /**
-* Se encarga de loguear al usuario
-*
-* @param string $email
-* @param string $clave
-* @return array
-*/
+	 * Loguea al usuario. Retorna false si falla.
+	 *
+	 * @param string $usuario
+	 * @param string $password
+	 * @return array|bool
+	 */
        
     
 public function login($email, $clave){
@@ -57,7 +57,7 @@ public function login($email, $clave){
                 $token = $builder->getToken();
                 setcookie('_token', (string)$token, time()+3600, "", "", false, true);
                 
-                //TODO OK
+                // ok :D
                     return [
                         'status' => 0,
                         'data' => [
@@ -72,13 +72,13 @@ public function login($email, $clave){
                     ];
                 exit;
             }else{
-                //NO COINCIDEN LAS CLAVES
+                //Algo salio mal :( 
                     return [
                         'status' => 1,
                     ];
             }
         }else{
-            //NO ENCUENTRA AL USUARIO
+           //Usuario no encontrado
                 return [
                         'status' => 2,
                     ];;
@@ -87,19 +87,19 @@ public function login($email, $clave){
     
 
 /**
-* Indica si el usuario está autenticado
+* indicador de usuario logueado
 *
 * @return bool
 */
     
 public static function isLogged()
 {
-    //ACA TENGO LA COOKIE ALMACENADA
+    //cookie
         return isset($_COOKIE['_token']);               
 }
     
 /**
-* Cierra la sesión.
+* salir
 */    
     
  public function logout()

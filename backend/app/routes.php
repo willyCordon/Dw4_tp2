@@ -2,82 +2,135 @@
 
 use DaVinci\Core\Route;
 
-/*---------------------------------------------
-                AUTENTIFICACION
----------------------------------------------*/
-// LOGIN
+/**
+ * 
+ * ************* Auntentificacion *******************
+ * 
+ */
+
+/**
+ * Login
+ */
 Route::add('POST', '/api/login', 'APIAuthController@doLogin');
 
-// LOGOUT
+/**
+ * Logout
+ */
 Route::add('GET', '/api/logout', 'APIAuthController@doLogout');
 
 
-/*---------------------------------------------
-                PUBLICACIONES
----------------------------------------------*/
-// LISTADO PUBLICACIONES
+/**
+ * 
+ * ************* Publicaciones *******************
+ * 
+ */
+
+/**
+ * Listado de publicaciones
+ */
 Route::add('GET', '/api/publicaciones', 'APIPublicacionesController@listado');
 
-// TRAER UNA PUBLICACION
+/**
+ * Traer una publicacion
+ */
 Route::add('GET', '/api/publicaciones/{id}', 'APIPublicacionesController@traerPorId');
 
-// BUSCAR TODAS LAS PUBLICACIONES DE UN USUARIO
+/**
+ * Todas las publicaciones del usuario
+ */
 Route::add('GET', '/api/publicaciones/filtro/{id}', 'APIPublicacionesController@listadoPorUsuario');
 
-// GUARDAR PUBLICACION NUEVA
+/**
+ * Publicaiones neuvas
+ */
 Route::add('POST', '/api/publicaciones', 'APIPublicacionesController@grabar');
 
-// BORRAR PUBLICACION
+/**
+ * Borrar publicacion
+ */
 Route::add('DELETE', '/api/publicaciones/{id}', 'APIPublicacionesController@borrar');
 
-// EDITAR PUBLICACION
+/**
+ * Editar publicacion
+ */
 Route::add('PUT', '/api/publicaciones', 'APIPublicacionesController@editar');
 
 
-/*---------------------------------------------
-                USUARIO
----------------------------------------------*/
-// BUSCAR UN USUARIO POR ID
+/**
+ * 
+ * ************* Uusuario *******************
+ * 
+ */
+
+/**
+ * Buscar usuario por id
+ */
 Route::add('GET', '/api/usuarios/{id}', 'APIUsuariosController@traerPorId');
 
-// ALTA DE USUARIO
+/**
+ * Alta de usuario
+ */
 Route::add('POST', '/api/usuarios', 'APIUsuariosController@grabar');
 
-// MODIFICAR USUARIO
+/**Edit usuario
+ * 
+ */
 Route::add('PATCH', '/api/usuarios', 'APIUsuariosController@editar');
 
 
-/*---------------------------------------------
-                COMENTARIOS
----------------------------------------------*/
-// BUSCAR TODOS LOS COMENTARIOS BUSCANDOLOS POR PUBLICACION
+/**
+ * 
+ * ************* Comentarios *******************
+ * 
+ */
+
+/**
+ * Comentarios por publicacion
+ */
 Route::add('GET', '/api/comentarios/fil/{id}', 'APIComentariosController@listadoPorPub');
 
-// BUSCAR UN COMENTARIO POR ID
+/**
+ * Comentarios por id
+ */
 Route::add('GET', '/api/comentarios/{id}', 'APIComentariosController@traerPorId');
 
-// ALTA DE COMENTARIOS
+/**
+ * Alta de comentarios
+ */
 Route::add('POST', '/api/comentarios', 'APIComentariosController@grabar');
 
-// BAJA DE COMENTARIOS
+/**
+ * Eliminar comentarios
+ */
 Route::add('DELETE', '/api/comentarios/{id}', 'APIComentariosController@borrar');
 
-// EDITAR PUBLICACION
+/**
+ * Editar publicacion
+ */
 Route::add('PUT', '/api/comentarios', 'APIComentariosController@editar');
 
 
 
-/*---------------------------------------------
-                        Equipos
----------------------------------------------*/
-// LISTADO DE Equipos
+/**
+ * 
+ * ************* Equipos *******************
+ * 
+ */
+
+/**
+ * Listado de equipos
+ */
 Route::add('GET', '/api/equipos', 'APIEquiposController@listado');
 
-//Listado de equipos limitado a 3
+/**
+ * Trae los primeros 3 equipos de la tabla
+ */
 
 Route::add('GET', '/api/equipos/limit', 'APIEquiposController@listadoLimit');
 
-// SUMADO DE PUNTOS
+/**
+ * Suma de puntos
+ */
 Route::add('PATCH', '/api/equipos/sumar', 'APIEquiposController@sumar');
 
 

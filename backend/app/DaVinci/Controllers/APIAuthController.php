@@ -8,10 +8,6 @@ use DaVinci\Core\View;
 use DaVinci\Models\Usuario;
 use DaVinci\Validation\Validator;
 
-/**
-* Controlador encargado de 
-* las peticiones de autentificación
-*/
 
 class APIAuthController
 {
@@ -19,18 +15,16 @@ class APIAuthController
     
 /**
 *
-* Ingresa el email y clave del usuario y 
-* devuelve una respuesta en base a la autentificación
+* Login con email y clave
 *
 */    
 public function doLogin(){
   
-    // DATA RECIBIDA
+ 
     	$buffer = file_get_contents('php://input');
         $data = json_decode($buffer, true);    
 
-    //TODO: VALIDAR
-    // AUTH
+   // TODO: Validar :D :D :D :D :D :D
         $auth = new Auth(new Usuario());
         $rta = $auth->login($data['email'], $data['clave']);
             
@@ -40,7 +34,7 @@ public function doLogin(){
    
 /**
 *
-* Remueve la cookie con el token de autentificación
+* Remueve la cookie con el token 
 */    
 public function doLogout(){
     if( Auth::isLogged() ){

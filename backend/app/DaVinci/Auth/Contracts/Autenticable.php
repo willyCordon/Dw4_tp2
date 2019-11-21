@@ -1,18 +1,13 @@
 <?php
 namespace DaVinci\Auth\Contracts;
 
-/**
- * Interfaz que define un contrato para que la clase
- * pueda usarse para autenticar con la clase Auth.
- */
 
 interface Autenticable
 {
     
     
 /**
- * Carga los datos del usuario, obtenidos a partir
- * del $usuario.
+ * Carga los datos del usuario
  *
  * @param string $usuario
  * @return bool

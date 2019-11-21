@@ -7,10 +7,8 @@ use PDO;
 class Publicacion extends Modelo
 {
     protected $table = "publicaciones";
-    protected $primaryKey = "id";
-        /** @var array Lista de atributos */    
+    protected $primaryKey = "id";  
     protected $attributes = ['id', 'texto', 'privacidad', 'dia', 'hora', 'imagen', 'usuario'];
-    
     protected $id;
     protected $texto;
     protected $privacidad;
@@ -46,16 +44,12 @@ public function getAllByUser($user){
 }
     
    
-        
-/*=================================================
-                GETTERS Y SETTERS
-==================================================*/    
-    
- /**
-* Setea el $id
-*
-* @param int $id
-*/    
+/**
+ * 
+ * ************* GETTER Y SETTER *******************
+ * 
+ */
+
 
     public function setId($id){
         if(!is_numeric($id)){
@@ -64,22 +58,13 @@ public function getAllByUser($user){
              $this->id = $id;
     }
     
- /**
- * Retorna el $id
- * 
-* @return int $id
- */
+
  
      public function getId(){
          return $this->id;
      }       
     
-/*--------------------------------------------------------------*/        
- /**
-* Setea el $texto
-*
-* @param string $texto
-*/    
+  
 
     public function setTexto($texto){
         if(!is_string($texto)){
@@ -88,23 +73,14 @@ public function getAllByUser($user){
              $this->texto = $texto;
     }    
     
- /**
- * Retorna el $texto
- * 
-* @return string $texto
- */
+
  
      public function getTexto(){
          return $this->texto;
      }       
     
     
-  /*--------------------------------------------------------------*/        
- /**
-* Setea el $privacidad
-*
-* @param string $privacidad
-*/    
+
 
     public function setPrivacidad($privacidad){
         if(!is_string($privacidad)){
@@ -113,23 +89,14 @@ public function getAllByUser($user){
              $this->privacidad = $privacidad;
     }    
     
- /**
- * Retorna el $privacidad
- * 
-* @return string $privacidad
- */
+
  
      public function getPrivacidad(){
          return $this->privacidad;
      }   
     
     
- /*--------------------------------------------------------------*/        
- /**
-* Setea el $dia
-*
-* @param string $dia
-*/    
+  
 
     public function setDia($dia){
         if(!is_string($dia)){
@@ -138,22 +105,12 @@ public function getAllByUser($user){
              $this->dia = $dia;
     }    
     
- /**
- * Retorna el $dia
- * 
-* @return string $dia
- */
- 
+
      public function getDia(){
          return $this->dia;
      }
     
- /*--------------------------------------------------------------*/        
- /**
-* Setea el $hora
-*
-* @param string $hora
-*/    
+  
 
     public function setHora($hora){
         if(!is_string($hora)){
@@ -162,23 +119,14 @@ public function getAllByUser($user){
              $this->hora = $hora;
     }    
     
- /**
- * Retorna el $hora
- * 
-* @return string $hora
- */
+
  
      public function getHora(){
          return $this->hora;
      }     
          
   
-  /*--------------------------------------------------------------*/        
- /**
-* Setea el $usuario
-*
-* @param int $usuario
-*/    
+  
 
     public function setUsuario($usuario){
         if(!is_numeric($id)){
@@ -187,22 +135,13 @@ public function getAllByUser($user){
              $this->usuario = $usuario;
     }    
     
- /**
- * Retorna el $usuario
- * 
-* @return int $usuario
- */
+ 
  
      public function getUsuario(){
          return $this->usuario;        
      }     
     
-   /*--------------------------------------------------------------*/        
- /**
-* Setea el $imagen
-*
-* @param string $imagen
-*/    
+
 
     public function setImagen($imagen){
         if(!is_string($hora)){
@@ -211,11 +150,7 @@ public function getAllByUser($user){
              $this->imagen = $imagen;
     }    
     
- /**
- * Retorna el $imagen
- * 
-* @return string $imagen
- */
+
  
      public function getImagen(){
          return $this->imagen;        
