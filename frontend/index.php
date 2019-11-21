@@ -67,8 +67,8 @@
         
     <script src='js/componentes/muro-page.js'></script>
     <script src='js/componentes/muro-page-listado.js'></script>
-    <script src='js/componentes/muro-page-casas.js'></script>
-    <script src='js/componentes/muro-page-casas-fila.js'></script>
+    <script src='js/componentes/muro-page-equipos.js'></script>
+    <script src='js/componentes/muro-page-equipos-fila.js'></script>
 
     <script src='js/componentes/perfil-page.js'></script>
     <script src='js/componentes/perfil-editar.js'></script>
