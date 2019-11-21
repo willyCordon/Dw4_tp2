@@ -7,7 +7,7 @@ Vue.component('publicaciones-simples',{
             <figure class='pub-img'>
                 <img :alt="'Avatar de ' + usuario.apellido + ' ' + usuario.nombre" :src="'img/avatares/' + usuario.avatar" class='img-circle'/>
                 <figcaption>
-                   <h3>{{usuario.nombre}} {{usuario.apellido}} <small>- equipo de {{equipo}}</small></h3>
+                   <h3>{{usuario.nombre}} {{usuario.apellido}} <small> Hincha de {{equipo}}</small></h3>
                     <div class='pub-date'>
                         <span><i class='pub-icon glyphicon glyphicon-calendar'></i>{{publicacion.dia}}</span> 
                         <span><i class='pub-icon glyphicon glyphicon-time'></i>{{publicacion.hora}}</span>

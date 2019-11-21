@@ -23,7 +23,7 @@ Vue.component('login-page-form',{
                 >
             </div>
             <button class='btn btm-default btn-block'>Ingresar</button>
-            <router-link class='links'to='/registro'>Registrarse
+            <router-link class='links'to='/registro'> Sos nuevo? Registrate.
             </router-link>
         </form>
 </div>`,

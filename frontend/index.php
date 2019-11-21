@@ -27,10 +27,10 @@
 		
 		<div class='collapse navbar-collapse' id='navbar'>
 			<ul v-if='auth.valid == true' class='nav navbar-nav navbar-right'>
-                <li><router-link to="/">Inicio</router-link></li>    
-                <li><router-link to="/perfil">Mi Perfil</router-link></li>    
-                <li><router-link to="/posiciones">Posiciones</router-link></li>    
-                <li><router-link to="/logout">Cerrar sesión</router-link></li> 
+                <li><router-link to="/"><i class="glyphicon glyphicon-home"></i> Inicio</router-link></li>    
+                <li><router-link to="/perfil"><i class="glyphicon glyphicon-user"></i> Mi Perfil</router-link></li>    
+                <li><router-link to="/posiciones"><i class="glyphicon glyphicon-th-list"></i> Posiciones</router-link></li>    
+                <li><router-link to="/logout"><i class="glyphicon glyphicon-ban-circle"></i> Cerrar sesión</router-link></li> 
 			</ul>
 		</div>
 		

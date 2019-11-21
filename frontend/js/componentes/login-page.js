@@ -1,8 +1,8 @@
 Vue.component('login-page',{
     template: `<div>  
-        <div class='row login-title text-center'>
-            <h2>Bienvenido</h2>
-            <p>Ingrese sus datos para poder poder disfrutar de contenido premium</p>
+        <div class='login-title text-center'>
+            <h2>¡Bienvenido!</h2>
+            <p>Ingresá y comenzá a hablar de lo que te apasiona</p>
             <div v-if='aviso.msj != null' :class='aviso.class'><p>{{aviso.msj}}</p></div>
         </div>
         <div>
@@ -24,7 +24,7 @@ Vue.component('login-page',{
         console.log(this.$route.params.msj)
         if(this.$route.params.msj){
             if(this.$route.params.msj == 'creado'){
-                this.aviso.msj = 'Ha sido registrado exitósamente en nuestro sitio. Por favor ingrese su usuario y contraseña para empezar';
+                this.aviso.msj = 'Ya estás registrado! Por favor, ingresá tu usuario y contraseña para empezar.';
                 this.aviso.class = 'msj-ok';
             }
         }

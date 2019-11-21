@@ -13,7 +13,7 @@ Vue.component('perfil-page',{
                         <ul class='datos-perfil'>
                             <li>{{usuario.email}}</li>
                             <li>{{usuario.fecha_nacimiento}}</li>
-                            <li :class="equipo.clase">equipo de {{equipo.nombre}}</li>
+                            <li :class="equipo.clase">Hincha de {{equipo.nombre}}</li>
                         </ul>
                 </div>
             </div>
@@ -85,7 +85,7 @@ Vue.component('perfil-page',{
             this.publicaciones.unshift(nuevo);
         },
 /**
-* Devuelve los datos de la equipo del usuario
+* Devuelve los datos del equipo del usuario
 */        
         seleccionarequipo: function(num){
             num = parseInt(num);

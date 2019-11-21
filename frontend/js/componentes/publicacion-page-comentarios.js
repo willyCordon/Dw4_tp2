@@ -17,7 +17,7 @@ Vue.component('publicacion-page-comentarios',{
                             </div>
                             <div class='col-xs-12 col-sm-10'>
                                 <router-link :to='urlPerfilUsuario'>
-                                    <h3>{{usuario.nombre}} {{usuario.apellido}} <small>- equipo de {{equipo}}</small></h3>
+                                    <h3>{{usuario.nombre}} {{usuario.apellido}} <small> Hincha de {{equipo}}</small></h3>
                                     <div class='pub-date'>
                                         <span><i class='pub-icon glyphicon glyphicon-calendar'></i>{{comentario.dia}}</span> 
                                         <span><i class='pub-icon glyphicon glyphicon-time'></i>{{comentario.hora}}</span>

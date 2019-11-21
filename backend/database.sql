@@ -72,7 +72,7 @@ VALUES
 ('Newells Old Boys',   'FRANK DARÍO KUDELKA'    ,'leproso'         ,21,    'newlls.png'),
 ('Patronato',          'MARIO SCIACQUA'         ,'patrón'          ,13,    'patronato.png'),
 ('Racing',             'EDUARDO COUDET'         ,'academico'       ,24,    'racing.png'),
-('River Plate (ARG)',  'MARCELO GALLARDO'       ,'millonario'      ,24,    'river.png'),
+('River Plate',  'MARCELO GALLARDO'       ,'millonario'      ,24,    'river.png'),
 ('Rosario Central',    'DIEGO COCCA'            ,'canalla'         ,19,    'rosario.png'),
 ('San Lorenzo',        'DIEGO MONARRIZ'         ,'santo'           ,19,    'sanlorenzo.png'),
 ('Talleres',           'ALEXANDER MEDINA'       ,'matador'         ,19,    'talleres.png'),
@@ -87,9 +87,9 @@ INSERT INTO usuarios(nombre, apellido, email, clave, fecha_alta, avatar, equipo,
 VALUES
 ('Willy', 'Cordon', 'cordonwilly24@gmail.com', '$2y$10$2cxR4r.B86y7nnfhaRGKKuiIsnsNKLs/yUQ6RQS8/pEfMTh2WLhM2', now(), 'willy.jpg', 6, '1992-12-22'),
 ('Alejandro', 'Di Donato', 'alejandro.didonato@davinci.edu.ar', '$2y$10$2cxR4r.B86y7nnfhaRGKKuiIsnsNKLs/yUQ6RQS8/pEfMTh2WLhM2', now(), 'ale.jpg', 19, '1992-07-25'),
-('Pablo', 'Rodriguez', 'pab.rodri@gmail.com', '$2y$10$2cxR4r.B86y7nnfhaRGKKuiIsnsNKLs/yUQ6RQS8/pEfMTh2WLhM2', now(), 'perfil.jpg', 8, '1978-02-21'),
-('Roberto', 'Gutierrez', 'beto.g@gmail.com', '$2y$10$2cxR4r.B86y7nnfhaRGKKuiIsnsNKLs/yUQ6RQS8/pEfMTh2WLhM2', now(), 'perfil1.jpg', 19, '1986-05-26'),
-('Mariana', 'Pérez', 'perezmarian@gmail.com', '$2y$10$2cxR4r.B86y7nnfhaRGKKuiIsnsNKLs/yUQ6RQS8/pEfMTh2WLhM2', now(), 'perfil.jpg', 6, '1996-11-13');
+('Pablo', 'Rodriguez', 'pab.rodri@gmail.com', '$2y$10$2cxR4r.B86y7nnfhaRGKKuiIsnsNKLs/yUQ6RQS8/pEfMTh2WLhM2', now(), 'perfil-pablo.jpg', 8, '1978-02-21'),
+('Roberto', 'Gutierrez', 'beto.g@gmail.com', '$2y$10$2cxR4r.B86y7nnfhaRGKKuiIsnsNKLs/yUQ6RQS8/pEfMTh2WLhM2', now(), 'perfil-roberto.jpg', 19, '1986-05-26'),
+('Mariana', 'Pérez', 'perezmarian@gmail.com', '$2y$10$2cxR4r.B86y7nnfhaRGKKuiIsnsNKLs/yUQ6RQS8/pEfMTh2WLhM2', now(), 'perfil-mariana.jpg', 6, '1996-11-13');
 
 INSERT INTO publicaciones (texto, privacidad, dia, hora, usuario, imagen)
 VALUES
