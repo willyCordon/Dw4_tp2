@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Parcial 2 - Programacion III y Clientes Web Mobile</title>
+    <title>Sobre Fútbol</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/estilos.css">
@@ -15,7 +15,7 @@
 
 
 
-<header id='top'>
+<header>
 
 <nav id='navegar' class='nav'>
 	<div class='container-fluid'>
@@ -49,8 +49,8 @@
 </main>
    
    
-<footer id='bottom'>
-    <h1>Sobre Futbol</h1>
+<footer>
+    <h1>Sobre Fútbol</h1>
     <p>Diseño y Programación: Willy Cordon & Alejandro Di Donato</p>
     <p>Clientes web mobile & Programación III</p>
 </footer>
