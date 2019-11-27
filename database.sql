@@ -1,6 +1,10 @@
+/****     CREAR BASE        *****/
+
 DROP DATABASE IF EXISTS DW4_SOBRE_FUTBOL;
 CREATE DATABASE DW4_SOBRE_FUTBOL;
 USE DW4_SOBRE_FUTBOL;
+
+/****     CREAR TABLAS        *****/
 
 CREATE TABLE equipos(
     id_equipo TINYINT(1) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -50,7 +54,7 @@ CREATE TABLE comentarios(
 )ENGINE='innoDB';
 
 
-/* INSERT */
+/****     INSERTAR EQUIPOS        *****/
 
 INSERT INTO equipos (nombre, entrenador, apodo, puntos, imagen)
 VALUES	
@@ -81,7 +85,7 @@ VALUES
 
 
 
-/****Claves: 1234*****/
+/****       INSERTAR USUARIOS - Claves: 1234          *****/
 
 INSERT INTO usuarios(nombre, apellido, email, clave, fecha_alta, avatar, equipo, fecha_nacimiento)
 VALUES
@@ -90,6 +94,8 @@ VALUES
 ('Pablo', 'Rodriguez', 'pab.rodri@gmail.com', '$2y$10$2cxR4r.B86y7nnfhaRGKKuiIsnsNKLs/yUQ6RQS8/pEfMTh2WLhM2', now(), 'perfil-pablo.jpg', 8, '1978-02-21'),
 ('Roberto', 'Gutierrez', 'beto.g@gmail.com', '$2y$10$2cxR4r.B86y7nnfhaRGKKuiIsnsNKLs/yUQ6RQS8/pEfMTh2WLhM2', now(), 'perfil-roberto.jpg', 19, '1986-05-26'),
 ('Mariana', 'Pérez', 'perezmarian@gmail.com', '$2y$10$2cxR4r.B86y7nnfhaRGKKuiIsnsNKLs/yUQ6RQS8/pEfMTh2WLhM2', now(), 'perfil-mariana.jpg', 6, '1996-11-13');
+
+/****     INSERTAR PUBLICACIONES          *****/
 
 INSERT INTO publicaciones (texto, privacidad, dia, hora, usuario, imagen)
 VALUES
@@ -100,6 +106,8 @@ VALUES
 ('Alguien tiene entradas para la final de la Libertadores?', 'Todos', '2019-12-01', '15:55:50', 2, null),
 ('Gracias Gallardo.', 'Todos', '2019-12-01', '21:24:30', 4, null),
 ('El mejor de todos los tiempos.', 'Todos', '2019-12-01', '23:25:30', 5, 'riquelme.jpg');
+
+/****       INSERTAR COMENTARIOS          *****/
 
 INSERT INTO comentarios(texto, publicacion, usuario, dia, hora)
 VALUES
