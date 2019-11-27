@@ -38,12 +38,12 @@ header
 
 }
 
-header h1
+.navbar-brand
 {
     background: url(../img/escudos/logo.png) no-repeat left center;
-    background-size: 60px 60px;
+    background-size: 64px 64px;
     padding-left: 65px;
-    font-size: 42px;
+    font-size: 36px;
     font-family: 'Anton', sans-serif;
 }
 
@@ -101,12 +101,6 @@ footer h1
     font-family: 'Anton', sans-serif;
 }
 
-@media(max-width:767px){
-    footer h1
-    {
-        font-size:20pt;
-    }
-}
 
 /****************      BODY        **********************/
 
@@ -187,11 +181,16 @@ body
     display:flex;
     justify-content: space-between;
     align-items: flex-start;
+    border-radius: 10px;
 }
 
 h2
 {
-    color: #2B785E;
+    color: #FFF;
+    background-color: #2B785E;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 h3
@@ -286,19 +285,6 @@ h3
     margin-top:10px;
 }
 
-@media (max-width:767px){
-    
-    .pub-date
-    {
-        font-size:10pt;
-    }
-    
-    .pub-user h3
-    {
-        font-size:18pt
-    }
-}
-
 
 .comentario
 {
@@ -308,23 +294,6 @@ h3
     box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
-@media(max-width:767px){
-    
-    .comentario
-    {
-        margin:20px 0;
-    }
-    
-    .comentario h3
-    {
-        text-align:center;
-    }
-    
-    .dropdown-menu
-    {
-        left: -150px;
-    }
-}
 
 .comentario .dropdown 
 {
@@ -407,26 +376,6 @@ h3
     display:inline-block;
 }
 
-@media(max-width:767px){
-    
-    .publicar select
-    {
-        width:100%;
-        padding:5px;
-    }
-    
-    .publicar button
-    {
-        width:100%;
-    }
-    
-    .publicar input[type='file']
-    {
-        margin:10px 0;
-    }
-}
-
-
 .perfil-user
 {
     background-color:white;
@@ -462,7 +411,8 @@ h3
 
 
 
-.datos-perfil{
+.datos-perfil
+{
     list-style:none;
     text-align:left;
     margin: 0;
@@ -470,65 +420,74 @@ h3
     margin-top:20px;
 }
 
-.datos-perfil li{
+.datos-perfil li
+{
     margin: 5px 0;
 }
 
 
-.datos-perfil li{
+.datos-perfil li
+{
     background: url(../img/icon/icon-email.png) no-repeat left center;
     background-size:25px 25px;
     padding:10px 0;
     padding-left: 35px;
 }
 
-.datos-perfil li:nth-child(2){
+.datos-perfil li:nth-child(2)
+{
     background-image: url(../img/icon/icon-calendar.png); 
 }
 
-.img-perfil{
+.img-perfil
+{
     width:175px;
 }
 
 
-.puntos{
+.puntos
+{
     background-color:rgb(9, 155, 143);
     padding:10px;
     color: #fff;
-
 }
 
-.puntos h3{
+.puntos h3
+{
     color: #fff;
 }
 
-.escudos{
+.escudos
+{
     width: 10%;
     height: 10%;
-    text-align: center;
-    
+    text-align: center; 
 }
 
 
-.puntos > div{
+.puntos > div
+{
     border-bottom:1px solid #ffffff;
     margin-bottom:15px;
     background-size: 60px 60px;
     justify-content: center ;
 }
 
-.puntos h3{
+.puntos h3
+{
     font-weight:bold;
 }
 
 
-.msj-error{
+.msj-error
+{
     background-color:indianred;
     color:white;
     padding:20px
 }
 
-.msj-error p{
+.msj-error p
+{
     padding:15px;
     padding-left: 60px;
     font-weight: bold;
@@ -537,17 +496,20 @@ h3
     background-size: 50px 50px;
 }
 
-.error-alta{
+.error-alta
+{
     color:red;
 }
 
-.msj-ok{
+.msj-ok
+{
     background-color:green;
     color:white;
     padding:20px
 }
 
-.msj-ok p{
+.msj-ok p
+{
     padding:15px;
     padding-left: 60px;
     font-weight: bold;
@@ -558,17 +520,43 @@ h3
 
 
 
-#editar input{margin-bottom:20px; font-size:14pt; padding:20px; color: grey}
-#editar .error-alta{font-size:12pt;}
-#editar ul{margin-top:10px;}
-#editar select{font-size:13pt; padding:10px;}
-#editar label{ font-size:14pt;}
-#editar{overflow: auto;}
+#editar input
+{
+    margin-bottom:20px; 
+    font-size:14pt; 
+    padding:20px; 
+    color: grey
+}
+
+#editar .error-alta
+{
+    font-size:12pt;
+}
+
+#editar ul
+{
+    margin-top:10px;
+}
+
+#editar select
+{
+    font-size:13pt; 
+    padding:10px;
+}
+
+#editar label
+{ 
+    font-size:14pt;
+}
+
+#editar
+{
+    overflow: auto;
+}
 
 
-
-
-.sinImagen{
+.sinImagen
+{
     position: absolute;
     top:10px;
     right:10px;
@@ -576,34 +564,41 @@ h3
     transition: .5s;
     cursor:pointer
 }
-.sinImagen:hover{
+
+.sinImagen:hover
+{
     transform:scale(1.5);
 }
 
 
-.form-registro{
+.form-registro
+{
     margin-top:30px;
     background-color:white;
     padding:20px;
     box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
-.form-registro form > div{
+.form-registro form > div
+{
     margin:20px 0;
 }
 
-.form-registro .btn{
+.form-registro .btn
+{
     margin-top:20px !important;
     display:inline-block;
     font-size:14pt;
 }
 
 .form-registro input[type='file'],
-.form-registro input[type='date']{
+.form-registro input[type='date']
+{
     padding:0px 10px;
 }
 
-.list-error{
+.list-error
+{
     background-color:indianred;
     color:white;
     margin:0;
@@ -612,26 +607,124 @@ h3
     list-style:none;
 }
 
-.previ{
+.previ
+{
     width:150px;
     height:150px;
 }
 
-@media(max-width:767px){
-    #editar img{
+
+/************************************** MEDIA QUERIES ***************************/
+
+@media(max-width:720px){
+    
+    
+    /*PUBLICACION*/
+    
+    .pub-date
+    {
+        font-size:10pt;
+    }
+    
+    .pub-user h3
+    {
+        font-size:18pt
+    }
+    
+    /*FOOTER*/
+    
+    footer h1
+    {
+        font-size:20pt;
+    }
+    
+    /*COMENTAR*/
+    
+    .comentario
+    {
+        margin:20px 0;
+    }
+    
+    .comentario h3
+    {
+        text-align:center;
+    }
+    
+    .dropdown-menu
+    {
+        left: -150px;
+    }
+    
+    /*PUBLICAR*/
+    
+    .publicar select
+    {
+        width:100%;
+        padding:5px;
+    }
+    
+    .publicar button
+    {
+        width:100%;
+    }
+    
+    .publicar input[type='file']
+    {
+        margin:10px 0;
+    }
+    
+    /*EDITAR*/
+    
+    #editar img
+    {
         width:50%;
         margin:0 25% !important;
         display:block;
     }
-    #editar figcaption{width:100%; text-align:center;}
-    #editar{text-align:center};
-    #editar select{width:100% !important;}
-    #editar button{width:100%;}
-    #editar input[type='file']{font-size:9pt;}
     
-    .form-registro label{margin-top:20px;}
-    .form-registro .row{margin:0px !important; padding:0 !important;}
-    .login{
+    #editar figcaption
+    {
+        width:100%; 
+        text-align:center;
+    }
+    
+    #editar
+    {
+        text-align: center;
+    }
+    
+    #editar select
+    {
+        width:100% !important;
+    }
+    
+    #editar button
+    {
+        width:100%;
+    }
+    
+    #editar input[type='file']
+    {
+        font-size:9pt;
+    }
+    
+    /*REGISTRO*/
+    
+    .form-registro label
+    {
+        margin-top:20px;
+    }
+    
+    .form-registro .row
+    {
+        margin:0px !important; 
+        padding:0 !important;
+    }
+    
+    /*LOGIN*/
+    
+    .login
+    {
         margin-top:10px;
         padding:20px;
         text-align:center;
